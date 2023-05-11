@@ -9,7 +9,11 @@
     
     </head>
     <body class="antialiased">
-        <h1>TITULO</h1>
+        <h1>@yield('title')</h1>
         <img src="/image/festivais-de-musica.jpg" alt="Banner">
+        @yield('Conteudo')
     </body>
+    <footer>
+        <p>AGT Events &copy; 2023</p>
+    </footer>
 </html>
