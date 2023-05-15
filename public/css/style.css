@@ -1,3 +1,10 @@
-h1{
-    color: red;
+.img{
+    background-image: url('../image/festivais-de-musica.jpg');
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.tamanho{
+    height: 50%;
+    width: 100%;
 }

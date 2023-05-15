@@ -1,6 +1,7 @@
 @extends('layouts.main')
 
-@section('titulo', 'PÁGINA DE CONTATOS')
+@section('titulo', 'Criar Evento')
+
 @section('conteudo')
 
 @endsection
