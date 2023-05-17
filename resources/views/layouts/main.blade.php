@@ -12,7 +12,7 @@
          <!-- CSS pessoal -->
          <link href="/css/style.css" rel="stylesheet">
     </head>
-    <body class="antialiased img">
+    <body class="antialiased">
         <header>
             <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
                 <a class="navbar-brand" href="/">
@@ -24,7 +24,7 @@
                             <a href="/" class="nav-link">Eventos</a>
                         </li>
                         <li class="nav-item ms-4">
-                            <a href="/events/create" class="nav-link">Criar Eventos</a>
+                            <a href="/eventos/criar" class="nav-link">Criar Eventos</a>
                         </li>
                         <li class="nav-item ms-4">
                             <a href="/" class="nav-link">Entrar</a>
@@ -43,5 +43,7 @@
         <footer>
             <p>AGT Events &copy; 2023</p>
         </footer>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     </body>
 </html>

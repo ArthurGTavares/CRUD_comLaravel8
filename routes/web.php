@@ -3,14 +3,10 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\eventoControle;
 
-
 Route::get('/', [eventoControle::class, 'index']);
-Route::get('/events/create', [eventoControle::class, 'create']);
+Route::get('/eventos/criar', [eventoControle::class, 'criar']);
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('/contato', function () {
-    return view('contato');
+Route::get('/lista/{id}', function ($id) {
+    return view('/eventos/lista',['id' => $id]);
+    
 });

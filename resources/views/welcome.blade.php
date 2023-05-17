@@ -1,9 +1,9 @@
 @extends('layouts.main')
 
-@section('titulo', 'PÁGINA DE CONTATOS')
+@section('titulo', 'PÁGINA DE EVENTOS')
 
 @section('conteudo')
-
-<div class="img tamanho"></div>
-
+    @foreach($evento as $eventos)
+        <p>{{ $eventos->nome }} - {{ $eventos->descricao }}</p><br>
+    @endforeach
 @endsection
