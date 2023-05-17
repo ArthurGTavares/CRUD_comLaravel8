@@ -12,34 +12,31 @@
          <!-- CSS pessoal -->
          <link href="/css/style.css" rel="stylesheet">
     </head>
-    <body class="antialiased">
+    <body >
         <header>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <a class="navbar-brand" href="/">
                     <img src="/image/35.png" width="60" height="45" class="ms-4">
                 </a>
                 <div class="collapse navbar-collapse" id="nav">
                     <ul class="navbar-nav">
-                        <li class="nav-item ms-4">
+                        <li class="nav-item ms-2">
                             <a href="/" class="nav-link">Eventos</a>
                         </li>
-                        <li class="nav-item ms-4">
+                        <li class="nav-item ms-2">
                             <a href="/eventos/criar" class="nav-link">Criar Eventos</a>
                         </li>
-                        <li class="nav-item ms-4">
+                        <li class="nav-item ms-2">
                             <a href="/" class="nav-link">Entrar</a>
                         </li>
-                        <li class="nav-item ms-4">
+                        <li class="nav-item ms-2">
                             <a href="/" class="nav-link">Cadastrar</a>
                         </li>
                     </ul>  
                 </div>
             </nav>
         </header>
-        <h1>@yield('titulo')</h1>
-
         @yield('conteudo')
-
         <footer>
             <p>AGT Events &copy; 2023</p>
         </footer>
