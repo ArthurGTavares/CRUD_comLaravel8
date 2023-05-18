@@ -5,10 +5,10 @@ body{
 
 #container-busca{
     background-image: url('../image/festivais-de-musica.jpg');
-    background-position: center;
+    background-position: center bottom;
     background-size: cover;
     background-attachment: fixed;
-    height: 420px;
+    height: 400px;
     padding: 50px;
     text-align: center;
     color: #F2A340;
@@ -19,3 +19,6 @@ body{
     width: 50%;
 }
 
+.row{
+    margin: 0;
+}

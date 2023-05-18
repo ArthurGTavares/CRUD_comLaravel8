@@ -19,4 +19,21 @@ class eventoControle extends Controller
         return view('eventos.criar');
 
     }
+
+    public function store(Request $request){
+        $evento = new Evento;
+
+        $evento->nome = $request->nome;
+        $evento->descricao = $request->descricao;
+        $evento->cidade = $request->cidade;
+        $evento->privado = $request->privado;
+
+        if($evento->privado == null){
+            $evento->privado = "0"; 
+        }
+
+        $evento->save();
+
+        return redirect('/');
+    }
 }

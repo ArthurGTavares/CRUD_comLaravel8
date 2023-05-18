@@ -15,21 +15,21 @@
     <body >
         <header>
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                <a class="navbar-brand" href="/">
-                    <img src="/image/35.png" width="60" height="45" class="ms-4">
+                <a class="navbar-brand ms-4" href="/">
+                    <img src="/image/35.png" width="35" height="30" class="ms-4">
                 </a>
-                <div class="collapse navbar-collapse" id="nav">
+                <div class="collapse navbar-collapse justify-content-end" id="nav">
                     <ul class="navbar-nav">
-                        <li class="nav-item ms-2">
+                        <li class="nav-item mx-2">
                             <a href="/" class="nav-link">Eventos</a>
                         </li>
-                        <li class="nav-item ms-2">
+                        <li class="nav-item mx-2">
                             <a href="/eventos/criar" class="nav-link">Criar Eventos</a>
                         </li>
-                        <li class="nav-item ms-2">
+                        <li class="nav-item mx-2">
                             <a href="/" class="nav-link">Entrar</a>
                         </li>
-                        <li class="nav-item ms-2">
+                        <li class="nav-item mx-2">
                             <a href="/" class="nav-link">Cadastrar</a>
                         </li>
                     </ul>  
