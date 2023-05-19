@@ -4,8 +4,12 @@
 
 <div id="Scontainer-criar-evento" class="col-md-6 offset-md-3 mt-4">
     <h1 class="mb-4">Crie seu evento aqui</h1>
-    <form action="/eventos" method="POST">
+    <form action="/eventos" method="POST" enctype="multipart/form-data">
         @csrf
+        <div class="form-group mb-2">
+            <label for="imagem" class="form-label">Imagem do evento:</label>
+            <input type="file" id="imagem" name="imagem" class="form-control">
+        </div>
         <div class="form-group mb-2">
             <label class="form-label" for="nome">Evento: </label>
             <input type="text" class="form-control" name="nome" id="nome" placeholder="Nome do Evento">

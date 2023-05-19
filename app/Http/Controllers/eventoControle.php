@@ -10,8 +10,8 @@ class eventoControle extends Controller
 {
     public function index(){
         
-        $eventos = Evento::all();
-        return view('welcome', ['evento' => $eventos]);
+        $evento = Evento::all();
+        return view('welcome', ['evento' => $evento]);
     
     }
 
@@ -31,9 +31,19 @@ class eventoControle extends Controller
         if($evento->privado == null){
             $evento->privado = "0"; 
         }
-
+        //O if esta vendo se tem um arquivo no campo de imagem e se ele é valido
+        if($request->hasFile('imagem') && $request->file('imagem')->isValid()){
+            $requestImagem = $request->imagem;
+            //to pegando a extensão da imagem
+            $extensao = $requestImagem->extension();
+            //agr vai renomear
+            $nomeImagem = md5($requestImagem->getClientOriginalName() . strtotime("now")) . "." . $extensao;
+            $requestImagem->move(public_path('imagem/eventos'), $nomeImagem);
+            //e vai salvar com o novo nome no banco
+            $evento->imagem = $nomeImagem;
+        }
         $evento->save();
 
-        return redirect('/');
+        return redirect('/')->with('mensagem', 'Seu evento foi criado com sucesso!');
     }
 }

@@ -16,7 +16,7 @@
         <header>
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <a class="navbar-brand ms-4" href="/">
-                    <img src="/image/35.png" width="35" height="30" class="ms-4">
+                    <img src="/imagem/35.png" width="35" height="30" class="ms-4">
                 </a>
                 <div class="collapse navbar-collapse justify-content-end" id="nav">
                     <ul class="navbar-nav">
@@ -36,6 +36,13 @@
                 </div>
             </nav>
         </header>
+        <main>
+            <div class="row">
+                @if(session('mensagem'))
+                    <p class="mensagem"> {{ session('mensagem') }} </p>
+                @endif
+            </div>
+        </main>
         @yield('conteudo')
         <footer>
             <p>AGT Events &copy; 2023</p>
