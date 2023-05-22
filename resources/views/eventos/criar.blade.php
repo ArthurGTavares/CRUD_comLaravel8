@@ -27,10 +27,32 @@
                 <option value="São paulo">São Paulo</option>
                 <option value="Rio de Janeiro">Rio de Janeiro</option>
             </select>
-        </div>
+        </div>      
+        <div class="form-group mb-3">
+            <label class="form-label" for="data">Data do Evento:</label>
+            <input type="date" class="form-control" id="data" name="data">
+        </div>          
         <div class="form-check form-switch mb-3">
             <input class="form-check-input" name="privado" value="1" type="checkbox" id="privado">
-            <label class="form-check-label" for="privado">Evento Privado</label>
+            <label class="form-check-label" for="privado">Evento Privado</label>            
+        </div>
+        <div class="form-group mb-3">                    
+            <label class="form-label" for="title">Adicione Itens Presentes no Evento:</label><br>
+            <div class="form-group">
+                <input name="itens[]" type="checkbox" value="Cadeiras" > Cadeiras<br>   
+            </div>    
+            <div class="form-group">             
+                <input name="itens[]" type="checkbox" value="Computadores" > Computadores<br>
+            </div>
+            <div class="form-group">
+                <input name="itens[]" type="checkbox" value="Palco" > Palco<br>
+            </div>
+            <div class="form-group">
+                <input name="itens[]" type="checkbox" value="Equipamento de Som" > Equipamento de Som<br>
+            </div>
+            <div class="form-group">
+                <input name="itens[]" type="checkbox" value="Brindes" > Brindes    
+            </div>
         </div>
         <div class="form-group mb-5">
             <button class="btn btn-primary" type="submit">Cadastrar Evento</button>
